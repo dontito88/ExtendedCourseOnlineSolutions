@@ -1,0 +1,25 @@
+namespace ExactProductOfRealNumbers
+{
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+    public class ExactProductOfRealNumbers
+    {
+        public static void Main()
+        {
+		        var n = int.Parse(Console.ReadLine());
+            decimal sum = 1;
+            
+            for(var i = 0; i < n; i++)
+            {
+                var temp = decimal.Parse(Console.ReadLine());
+                sum *= temp;
+            }
+            
+            Console.WriteLine(sum);
+        }
+    }
+}
