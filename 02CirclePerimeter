@@ -1,0 +1,17 @@
+namespace CirclePerimeter
+{
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+    public class CirclePerimeter
+    {
+        public static void Main()
+        {
+		        double r = double.Parse(Console.ReadLine());
+            Console.WriteLine("{0:f12}", 2 * Math.PI * r);
+        }
+    }
+}
