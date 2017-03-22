@@ -1,0 +1,35 @@
+namespace DictRefAdvanced
+{
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+    public class DictRefAdvanced
+    {
+        public static void Main()
+        {
+		        var inputLine = Console.ReadLine();
+            var dictionary = new Dictionary<string, List<int>>();
+            
+            while(inputLine != "end")
+            {
+                inputLine.Split(new char[]{' ', '-', '>', ','}, StringSplitOptions.RemoveEmptyEntries);
+                var name = inputLine[0];
+                var info = inputLine[1];
+                var infoValue = -1;
+                
+                if(!dictionary.ContainsKey(name))
+                {
+                  dictionary[name] = new List<int>();
+                }
+                
+                if(int.TryParse(info), out infoValue)
+                {
+                  
+                }
+                
+                inputLine = Console.ReadLine();
+            }
+        }
+    }
+}
