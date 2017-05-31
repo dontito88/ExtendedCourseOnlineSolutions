@@ -10,20 +10,20 @@ using System.Threading.Tasks;
     {
         public static void Main()
         {
-		        var profession = Console.ReadLine().ToLower();
-            var quantity = int.Parse(Console.ReadLine());
+		var profession = Console.ReadLine().ToLower();
+           	var quantity = int.Parse(Console.ReadLine());
             
             switch(profession)
             {
-                case "athlete": Console.WriteLine("Water");
+                case "athlete": Console.WriteLine(quantity * 0.7);
                 break;
-                case "businessman": Console.WriteLine("Coffee");
+                case "businessman": Console.WriteLine(quantity * 1);
                 break;
-                case "businessWoman": Console.WriteLine("Coffee");
+                case "businessWoman": Console.WriteLine(quantity * 1);
                 break;
-                case "softuni student": Console.WriteLine("Beer");
+                case "softuni student": Console.WriteLine(quantity * 1.7);
                 break;
-                default: Console.WriteLine("Tea");
+                default: Console.WriteLine(quantity * 1.2);
                 break;
             }
         }
