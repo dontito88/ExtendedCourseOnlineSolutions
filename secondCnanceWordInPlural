@@ -1,0 +1,17 @@
+namespace WordInPlural
+{
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+    public class WordInPlural
+    {
+        public static void Main()
+        {
+            var word = Console.ReadLine().Trim();
+             if(word.EndsWith(""))
+	      }
+    }
+}
